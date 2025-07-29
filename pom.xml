@@ -5,13 +5,16 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.3.1</version> <relativePath/> </parent>
+        <version>3.3.1</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
     <groupId>com.hebert.consultorio</groupId>
     <artifactId>consultorio-eventos-notificacoes</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>consultorio-eventos-notificacoes</name>
     <description>Demo do padrão Observer com Spring para Consultório Odontológico</description>
 
+    <!-- METADADOS DO PROJETO (PREENCHIDOS COMO EXEMPLO) -->
     <url>https://github.com/hebert/consultorio-eventos-notificacoes</url>
     <licenses>
         <license>
@@ -23,13 +26,18 @@
     <developers>
         <developer>
             <name>Hebert</name>
-            <email>seu_email@example.com</email> <organization>DIO - Digital Innovation One</organization> <organizationUrl>https://www.dio.me</organizationUrl> </developer>
+            <email>seu_email@example.com</email> <!-- Substitua pelo seu e-mail -->
+            <organization>DIO - Digital Innovation One</organization> <!-- Opcional: Sua organização ou onde aprendeu -->
+            <organizationUrl>https://www.dio.me</organizationUrl> <!-- Opcional: URL da organização -->
+        </developer>
     </developers>
     <scm>
         <connection>scm:git:git://github.com/hebert/consultorio-eventos-notificacoes.git</connection>
         <developerConnection>scm:git:ssh://github.com:hebert/consultorio-eventos-notificacoes.git</developerConnection>
         <url>https://github.com/hebert/consultorio-eventos-notificacoes</url>
     </scm>
+    <!-- FIM DOS METADADOS -->
+
     <properties>
         <java.version>17</java.version>
     </properties>
@@ -59,6 +67,14 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <!-- DEPENDÊNCIA DO SPRINGDOC OPENAPI (SWAGGER) - MOVIDA PARA O LOCAL CORRETO -->
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+            <version>2.5.0</version> <!-- Verifique a versão mais recente compatível com seu Spring Boot -->
+        </dependency>
+        
     </dependencies>
 
     <build>
