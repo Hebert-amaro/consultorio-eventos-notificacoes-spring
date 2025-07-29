@@ -1,6 +1,8 @@
 package com.hebert.consultorio.listener;
 
-import com.hebert.consultorio.event.ConsultaAgendadaEvent; 
+import com.hebert.consultorio.event.ConsultaAgendadaEvent;
+
+import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
 
 @Component
